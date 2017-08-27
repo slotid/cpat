@@ -140,7 +140,7 @@ function _password_enforce_log2_boundaries($count_log2) {
  * @param $algo
  *   The string name of a hashing algorithm usable by hash(), like 'sha256'.
  * @param $password
- *   The plain-text password to hash.
+ *   Plain-text password up to 512 bytes (128 to 512 UTF-8 characters) to hash.
  * @param $setting
  *   An existing hash or the output of _password_generate_salt().  Must be
  *   at least 12 characters (the settings and salt).
